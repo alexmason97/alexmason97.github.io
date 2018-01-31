@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SideBar Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<h1><center>Alexander Mason</center></h1>
+	</head>
+	
+<body>
+
+	
+
+	<div id="sidebar">
+	  
+		<ul class="nav">
+			<li><a href="#">Home</a></li> 
+			<li><a href="#">About</a></li> 
+			<li><a href="#">Education</a></li> 
+			<li><a href="#">Work Experience</a></li> 
+			<li><a href="#">Hobbies/Pastimes</a></li> 
+		</ul> 
+		
+		<div id="sidebar-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script>
+	
+	$(document).ready(function(){
+		$('#sidebar-button').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});	
+	});
+	
+	</script>
+		
+</body>
+</html>
+	
+
+

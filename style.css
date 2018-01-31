@@ -1,0 +1,79 @@
+/**
+ * style.css
+ */
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial;
+}
+
+#sidebar {
+  background:#0397e1;
+  width:200px;
+  height:100%;
+  display:block;
+  position:absolute;
+  left:-200px;
+  top:0px;
+  transition:left 0.5s linear;
+}
+
+#sidebar.visible {
+  left:0px;
+  transition:left 0.4s linear;
+}
+
+.nav {
+  margin:0px;
+  padding:0px;
+}
+
+.nav li {
+  list-style:none;
+  display:block;
+  padding:15px;
+  border-bottom:1px solid #000000;
+}
+
+.nav a {
+  text-decoration:none;
+  color:white;
+}
+
+.nav a:hover {
+  background:#005dc3e;
+  color:black;
+  border-bottom:10px none; 
+  display:block;
+  text-decoration:none;
+}
+
+.selected {
+  background:#0397e1;
+}
+
+.selected a {
+  color:#0397e1;
+}
+
+#sidebar-button {
+  display:inline-block;
+  vertical-align:middle;
+  width:20px;
+  height:15px;
+  cursor:pointer;
+  margin:20px;
+  position:absolute;
+  top:0px;
+  right:-60px;
+}
+
+#sidebar-button span {
+  height:1px;
+  background:#111;
+  margin-bottom:5px;
+  display:block;
+}
+  
+	
